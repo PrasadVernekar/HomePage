@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background=" #F1D788"
+    tools:context=".MainActivity">
+
+
+    <ViewFlipper
+        android:id="@+id/flipper"
+        android:layout_width="414dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center"
+        app:layout_constraintBottom_toBottomOf="@+id/bottomNavigationView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.102" >
+
+    </ViewFlipper>
+
+    <Button
+        android:id="@+id/buttoncleaning"
+        android:layout_width="347dp"
+        android:layout_height="64dp"
+        android:layout_marginBottom="176dp"
+        android:text="@string/cleaning"
+        android:textColor="#E57403"
+        app:backgroundTint="#0C2B4F"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/painting"
+        app:layout_constraintTop_toBottomOf="@+id/buttoncarpentary" />
+
+    <Button
+        android:id="@+id/buttoncarpentary"
+        android:layout_width="347dp"
+        android:layout_height="64dp"
+        android:text="Carpentary"
+        android:textColor="#E57403"
+        app:backgroundTint="#0C2B4F"
+        app:layout_constraintBottom_toTopOf="@+id/buttoncleaning"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/painting"
+        app:layout_constraintTop_toBottomOf="@+id/buttonac" />
+
+    <Button
+        android:id="@+id/buttonac"
+        android:layout_width="347dp"
+        android:layout_height="64dp"
+        android:text="AC"
+        android:textColor="#E57403"
+        app:backgroundTint="#0C2B4F"
+        app:layout_constraintBottom_toTopOf="@+id/buttoncarpentary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/painting"
+        app:layout_constraintTop_toBottomOf="@+id/buttonelectrical" />
+
+    <Button
+        android:id="@+id/buttonelectrical"
+        android:layout_width="346dp"
+        android:layout_height="64dp"
+        android:text="Electrical"
+        android:textColor="#E57403"
+        app:backgroundTint="#0C2B4F"
+        app:layout_constraintBottom_toTopOf="@+id/buttonac"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/painting"
+        app:layout_constraintTop_toBottomOf="@+id/buttonplumbing" />
+
+    <Button
+        android:id="@+id/buttonplumbing"
+        android:layout_width="346dp"
+        android:layout_height="67dp"
+        android:text="Plumbing"
+        android:textColor="#E57403"
+        app:backgroundTint="#0C2B4F"
+        app:layout_constraintBottom_toTopOf="@+id/buttonelectrical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toEndOf="@+id/painting"
+        app:layout_constraintTop_toBottomOf="@+id/buttonpainting" />
+
+    <ImageView
+        android:id="@+id/electrical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="344dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.448"
+        app:srcCompat="@drawable/electrical" />
+
+    <ImageView
+        android:id="@+id/plumbing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="344dp"
+        android:layout_marginBottom="432dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/painting"
+        app:srcCompat="@drawable/plumbing" />
+
+    <ImageView
+        android:id="@+id/ac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="347dp"
+        android:layout_marginBottom="304dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/electrical"
+        app:srcCompat="@drawable/ac" />
+
+    <ImageView
+        android:id="@+id/carpentary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="347dp"
+        android:layout_marginBottom="240dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ac"
+        app:srcCompat="@drawable/carpentary" />
+
+    <ImageView
+        android:id="@+id/cleaning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/carpentary"
+        app:srcCompat="@drawable/cleaning" />
+
+    <ImageView
+        android:id="@+id/painting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="347dp"
+        app:layout_constraintBottom_toTopOf="@+id/electrical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727"
+        app:srcCompat="@drawable/painting" />
+
+    <Button
+        android:id="@+id/buttonpainting"
+        android:layout_width="346dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="171dp"
+        android:text="Painting"
+        android:textColor="#E57403"
+        app:backgroundTint="#0C2B4F"
+        app:layout_constraintBottom_toTopOf="@+id/buttonplumbing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/painting"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#0C2B4F" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0C2B4F"
+        app:itemIconTint="#E57403"
+        app:itemTextColor="#E57403"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.995"
+        app:menu="@menu/bottom_navmenu" />
+
+   <androidx.cardview.widget.CardView
+       android:layout_width="409dp"
+       android:layout_height="64dp"
+       app:cardBackgroundColor="#0C2B4F"
+       app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView2"
+       app:layout_constraintEnd_toEndOf="parent"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintVertical_bias="1.0">
+
+
+      <ImageView
+          android:id="@+id/imageView23"
+          android:layout_width="64dp"
+          android:layout_height="64dp"
+          android:layout_marginStart="175dp"
+          android:layout_marginEnd="150dp"
+          android:layout_marginRight="150dp"
+          android:background="#E57403"
+          app:layout_constraintEnd_toStartOf="@+id/imageView18"
+          app:layout_constraintStart_toStartOf="parent"
+          app:srcCompat="@drawable/ic_baseline_speed_24" />
+
+
+       <ImageButton
+           android:id="@+id/imageButton11"
+           android:layout_width="64dp"
+           android:layout_height="64dp"
+           android:layout_marginEnd="409dp"
+           android:layout_marginRight="409dp"
+           app:layout_constraintStart_toStartOf="parent"
+           app:srcCompat="@drawable/ic_baseline_people_24"
+           android:layout_marginStart="280dp"
+           android:background="#E57403"
+           app:layout_constraintEnd_toStartOf="@+id/imageView18" />
+
+       <ImageButton
+           android:id="@+id/imageButton12"
+           android:layout_width="64dp"
+           android:layout_height="64dp"
+           app:srcCompat="@drawable/ic_baseline_verified_user_24"
+           android:layout_marginEnd="409dp"
+           android:layout_marginRight="409dp"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_marginStart="70dp"
+           android:background="#E57403" />
+
+
+
+   </androidx.cardview.widget.CardView>
+
+   <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background=" #0C2B4F"
+        android:tint="#E57403"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_baseline_call_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
